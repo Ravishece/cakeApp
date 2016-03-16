@@ -130,6 +130,31 @@ input[type="date"]::-webkit-inner-spin-button{
 	left: 3%;
 }
 
-.card.ccard{
-	
+/* New styles */
+
+.cake-title{
+	font-size: 30px;
+}
+
+td span.pending{
+	background: pink;
+}
+
+td span.completed{
+	background: lightGreen;
+}
+
+td span.delivered{
+	background: green;
+}
+
+order-table td{
+	font-size: 13px;
+}
+
+.dropdown-show{
+	opacity: 1;
+	display: block;
+	top: 37px;
+	width: 182px;
 }

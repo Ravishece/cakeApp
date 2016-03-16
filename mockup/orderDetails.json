@@ -1,0 +1,29 @@
+{
+    "cakeType":"custom",
+    "details":[{
+        "Property":"Cake Shape",
+        "name":"Round",
+        "image":"sc_cake_round.png",
+        "serving":"10-12"
+    },
+    {
+        "Property":"Cake Decoration",
+        "name":"Batman",
+        "image":"sc_cake_decor_batman.png"
+    },
+    {
+        "Property":"Cake Flavor",
+        "name":"Chocolate",
+        "image":"sc_cakeflavor_chocolate.png"
+    },
+    {
+        "Property":"Cake Icing Flavor",
+        "name":"Whipped",   
+        "image":"sc_icing_butrcreme_maroon.png"
+    },
+    {
+        "Property":"Cake Border",
+        "name":"Bead",
+        "image":"sc_border_bead.png"
+    }]
+}
