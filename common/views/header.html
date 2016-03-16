@@ -1,0 +1,62 @@
+<!-- START HEADER -->
+    <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color">
+                <div class="nav-wrapper">
+                    <ul class="left">                      
+                      <li><h1 class="logo-wrapper"><a href="#/home" class="brand-logo darken-1">Cake App</a> <span class="logo-text">Cake App</span></h1></li>
+                    </ul>
+                    <!--<div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="mdi-action-search"></i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"/>
+                    </div>-->
+                    <ul class="right hide-on-med-and-down">
+                        <li ng-class="{active : toggleViewItems.fullScreen}" class="fullScreen"><a href="javascript:void(0);" ng-click="toggleFullscreen('fullScreen')" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li ng-class="{active : toggleViewItems.notifications}" class="notifications"><a href="javascript:void(0);" ng-click="toggleView('notifications')" class="waves-effect waves-block waves-light notification-button"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
+                        
+                        </a>
+                        </li>                        
+                        <li ng-class="{active : toggleViewItems.quotes}" class="quotes"><a href="javascript:void(0);" ng-click="toggleView('quotes')" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-editor-insert-invitation"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <!-- notifications-dropdown -->
+                    <ul id="notifications-dropdown" class="dropdown-content notifications" ng-class="{active : toggleViewItems.notifications}">
+                      <li>
+                        <h5>NOTIFICATIONS <span class="new badge">5</span></h5>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order for Chocolate has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">5 mins ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order for Chocolate has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">10 mins ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order for Chocolate has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 hour ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order for Chocolate has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order for Chocolate has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order for Chocolate has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+        <a href="javascript:;" ng-click="toggleLeftNav('hideSideNav')" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light cyan"><i class="mdi-navigation-menu"></i></a>
+    </header>
+    <!-- END HEADER -->

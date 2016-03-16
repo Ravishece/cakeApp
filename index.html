@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-controller="baseController" ng-init="init()">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="xPander">
+    <meta name="keywords" content="xPander">
+    <title>Samsclub Cake App</title>
+
+    <!-- Favicons-->
+    <link rel="icon" href="theme/images/favicon/favicon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="theme/images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="theme/images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+
+
+    <!-- CORE CSS-->
+    
+    <link href="theme/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="theme/css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+      <!-- Custome CSS-->    
+    <link href="theme/css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="theme/css/layouts/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="theme/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="theme/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <!-- Custom styles -->
+    <link href="common/styles/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="common/styles/custom.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    
+    
+  </head>
+
+  <body class="cyan" ng-class="{loaded: pageLoaded, fullscreen : hideSideNav || contentOnlyLayout}">
+      
+    <ng-include ng-hide="contentOnlyLayout" src="'common/views/header.html'"></ng-include>
+    <section id="main" >
+        <div class="wrapper">
+            <ng-include ng-hide="contentOnlyLayout" src="'common/views/nav.html'"></ng-include>
+            <ng-view></ng-view>
+            <ng-include ng-hide="contentOnlyLayout" src="'common/views/quotes.html'"></ng-include>
+        </div>
+    </section>
+    <ng-include src="'common/views/base.html'"></ng-include>
+    <ng-include ng-hide="contentOnlyLayout" src="'common/views/footer.html'"></ng-include>
+    
+    <script type="text/javascript" src="theme/js/plugins/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="theme/js/materialize.min.js"></script>
+    <script type="text/javascript" src="theme/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script data-main="common/main" src="theme/js/plugins/require/require.js"></script>
+    
+     <script type="text/javascript" src="theme/js/plugins.js"></script>
+    <script type="text/javascript" src="theme/js/custom-script.js"></script>
+    
+    
+    <script src="common/scripts/scripts.js" type="text/javascript" ></script>
+    
+  </body>
+
+</html>

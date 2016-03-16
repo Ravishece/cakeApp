@@ -1,0 +1,40 @@
+{
+		  "status": "Success",
+		  "sucMsg": [
+		    "Listing",
+		    "Retrive all records successfully."
+		  ],
+		  "errMsg": [],
+		 "data": {
+		    "totalRecords":"10",
+		  "careTakerModel": [
+		    {
+		      "id": "2",
+		      "userId": "46",
+		      "careTakerName": "kumar",
+		      "careTakerCallingName": "shan",
+		      "careTakerPictureReference" : "D://image.png",
+		      "createdOn": "2015-09-29 08:02:35",
+		      "modifiedOn": "2015-09-29 08:02:35"
+		    },
+		    {
+		      "id": "3",
+		      "userId": "2",
+		      "careTakerName": "bashir",
+		      "careTakerCallingName": "bashirudeen",
+		      "careTakerPictureReference" : "D://image.png",
+		      "createdOn": "2015-09-29 08:16:16",
+		      "modifiedOn": "2015-09-29 08:16:16"
+		    },
+		    {
+		      "id": "4",
+		      "userId": "3",
+		      "careTakerName": "bashir",
+		      "careTakerCallingName": "ahmad",
+		      "careTakerPictureReference" : "D://image.png",
+		      "createdOn": "2015-09-29 12:37:06",
+		      "modifiedOn": "2015-09-29 12:37:06"
+		    }
+		  ]
+		}
+	}

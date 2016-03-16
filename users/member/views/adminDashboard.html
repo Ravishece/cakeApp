@@ -1,0 +1,133 @@
+            <section id="content" ng-init="init()">
+
+                
+                <div class="container custom-table" ng-show="!orderDetailView">
+                    <div class="row">
+                        <div class="col s12 m6 l12">
+                             <p>Order Received</p>   
+                            <div class="filter">
+                            	<label>Filter by:</label>
+                            	<select style="display:block" class="filter-select">
+                                  <option value="volvo">Order Pending </option>
+                                  <option value="saab">Order Processing</option>
+                                  <option value="opel">Order Delivered</option>
+                        		</select> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                    <table class="table table-condensed order-table" >
+                        <thead>
+                          <tr>
+                            <th>Image</th>
+                            <th>Item Description</th>
+                            <th>Order ID</th>
+                            <th>Member name/email</th>
+                            <th>Member Contact</th>
+                            <th>Order Date</th>
+                            <th>Order Total</th>
+                            <th>Order Status</th>
+                            <th class="cta-head"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> <img src="images/cake-order.png" /></td>
+                            <td>10” Round Cake, <br />Serves 10 -12  </td>
+                            <td>CK198234</td>
+                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
+                            <td>9343927070</td>
+                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
+                            <td>$18.00</td>
+                            <td class="processed">Processed</td>
+                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
+                          </tr>
+                          <tr>
+                            <td> <img src="images/cake-order.png" /></td>
+                            <td>10” Round Cake, <br />Serves 10 -12  </td>
+                            <td>CK198234</td>
+                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
+                            <td>9343927070</td>
+                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
+                            <td>$18.00</td>
+                            <td class="pending">Pending</td>
+                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
+                          </tr>
+                          <tr>
+                            <td> <img src="images/cake-order.png" /></td>
+                            <td>10” Round Cake, <br />Serves 10 -12  </td>
+                            <td>CK198234</td>
+                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
+                            <td>9343927070</td>
+                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
+                            <td>$18.00</td>
+                            <td class="pending">Pending</td>
+                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
+                          </tr>
+                          <tr>
+                            <td> <img src="images/cake-order.png" /></td>
+                            <td>10” Round Cake, <br />Serves 10 -12  </td>
+                            <td>CK198234</td>
+                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
+                            <td>9343927070</td>
+                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
+                            <td>$18.00</td>
+                            <td class="pending">Pending</td>
+                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
+                          </tr>
+                          <tr>
+                            <td> <img src="images/cake-order.png" /></td>
+                            <td>10” Round Cake, <br />Serves 10 -12  </td>
+                            <td>CK198234</td>
+                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
+                            <td>9343927070</td>
+                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
+                            <td>$18.00</td>
+                            <td class="delivered">Pending</td>
+                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
+                          </tr>
+                          <tr>
+                            <td> <img src="images/cake-order.png" /></td>
+                            <td>10” Round Cake, <br />Serves 10 -12  </td>
+                            <td>CK198234</td>
+                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
+                            <td>9343927070</td>
+                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
+                            <td>$18.00</td>
+                            <td class="processed">Pending</td>
+                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
+                          </tr>
+                          <tr class="last-row">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="order-total">Order Total:</td>
+                                <td class="dollar-price">$135.00</td>
+                                <td></td>
+                                <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                </div>
+                
+                
+                <div class="container custom-table" ng-show="orderDetailView">
+                    
+                    <div class="row">
+                        <div class="col s12 m6 l12">
+                            <button class="btn waves-effect waves-light right" ng-click="toggleOrderDetails()" type="submit" name="action">Back to Order table
+                                <i class="mdi-content-send right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+            </section>
+            <!-- END CONTENT -->

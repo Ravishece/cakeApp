@@ -1,0 +1,3 @@
+Dashboard.service('navService', [function () {
+	
+}]);

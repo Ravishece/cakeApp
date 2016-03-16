@@ -1,0 +1,87 @@
+<section id="cwc" ng-init="init()">
+    <div class="cwc-section">
+      
+      <div class="row"  id="basicScreen" ng-show="basicScreenShow">
+            <div class="col s12 m8 l8">
+                <div class="card large">
+                  
+                  <div class="chat-container">
+                    
+                    <form>
+                      
+                      <div class="input-field col s12">
+                        <label style="margin-top: -25px;"> Select Caretaker </label>
+                        <select style="display:block">
+                            <option>Universe</option>
+                          </select>
+                      </div>
+                      
+                      <div class="input-field col s12" style="margin: 30px 0;">
+                        <label style="margin-top: -10px;">Self Analysis Mode</label>
+                        <p ng-repeat="item in menuItems">
+                          <input name="group1" type="radio" ng-model="pageData.selectedMenu" ng-value="item.flowName" />
+                          <label>{{item.flowName}}</label>
+                        </p>
+                        {{pageData.selectedMenu}}
+                        
+                        <label ng-repeat="project in projects">
+    <input type="radio" ng-model="data.favoriteProject" ng-value="project">{{project.name}}</input>
+  </label>
+                       <!-- <p>
+                          <input name="group1" type="radio" id="test2" />
+                          <label for="test2">Complete Flow</label>
+                        </p>-->
+                      </div>
+                      
+                      
+                      <div class="input-field col s12" style="margin: 30px 0;">
+                        <label style="margin-top: -10px;">Life Area</label>
+                        <p>
+                          <input type="checkbox" id="test5" />
+                          <label for="test5">Health</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test6" />
+                          <label for="test6">Relationship</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test7" />
+                          <label for="test7">Economical Status</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test8" />
+                          <label for="test8">Others</label>
+                        </p>
+                      </div>
+                        
+                      <div class="col s12 m8 l12" style="text-align:center;">
+                        <button class="btn waves-effect waves-light" type="submit" name="action" disabled="disabled">Submit</button>
+                      </div>
+                      
+                    </form>
+                    
+                  </div>  
+                  
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" ng-show="!basicScreenShow">
+            <div class="col s12 m8 l8">
+                <div class="card large">
+                  
+                  <div class="chat-container">
+                    <div class="chat-block cretaker-chat">
+                        Hi, friend how are you ?
+                    </div>
+                    
+                    <div class="chat-block user-chat">
+                      I am good Caretaker. How are you ?
+                    </div>
+                  </div>  
+                  
+                </div>
+            </div>
+        </div>
+    <div>
+</section>

@@ -1,0 +1,36 @@
+{
+    "status": "Success",
+    "sucMsg": [
+        "SeoFlow",
+        "Records retrieved successfully."
+    ],
+    "errMsg": [],
+    "data": {
+        "SeoFlowModel": [
+            {
+                "Flow": [
+                    {
+                        "id": "3",
+                        "flowName": "How to Get Fair Skin Naturally",
+                        "flowMenuId": "15",
+                        "flowStatus": "1",
+                        "createdOn": "2016-02-17 14:22:13",
+                        "createdBy": "1",
+                        "modifiedOn": null,
+                        "modifiedBy": "0"
+                    },
+                    {
+                        "id": "4",
+                        "flowName": "How to Get Slim",
+                        "flowMenuId": "15",
+                        "flowStatus": "1",
+                        "createdOn": "2016-02-17 14:23:57",
+                        "createdBy": "1",
+                        "modifiedOn": null,
+                        "modifiedBy": "0"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,696 @@
+{
+		  "status": "Success",
+		  "sucMsg": [
+			 "Category",
+			 "Category retrieved successfully."
+		  ],
+		  "errMsg": [],
+		  "data": {
+			 "categoryModel": [
+				{
+				  "id": 1,
+				  "categoryName": "qwerty12345",
+				  "categoryParent": 2,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 12:31:01",
+				  "modifiedOn": "2016-02-06 14:25:29",
+				  "child_data": [
+					 {
+						"id": 22,
+						"categoryName": "testcat123",
+						"categoryParent": 1,
+						"categoryLevel": 1,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-06 08:14:55",
+						"modifiedOn": "2016-02-06 09:58:49",
+						"child_data": []
+					 },
+					 {
+						"id": 24,
+						"categoryName": "qwerty",
+						"categoryParent": 1,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-06 09:58:05",
+						"modifiedOn": "2016-02-06 10:22:22",
+						"child_data": []
+					 },
+					 {
+						"id": 25,
+						"categoryName": "testcat12a3",
+						"categoryParent": 1,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-06 10:01:04",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 26,
+						"categoryName": "wewew",
+						"categoryParent": 1,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-06 12:24:13",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 27,
+						"categoryName": "qwerty12345",
+						"categoryParent": 1,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-06 12:24:32",
+						"modifiedOn": null,
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 4,
+				  "categoryName": "jeevaradhan",
+				  "categoryParent": 0,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 12:48:54",
+				  "modifiedOn": "2016-01-30 05:29:42",
+				  "child_data": []
+				},
+				{
+				  "id": 5,
+				  "categoryName": "category1",
+				  "categoryParent": 0,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 13:45:36",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 6,
+						"categoryName": "category1",
+						"categoryParent": 5,
+						"categoryLevel": 0,
+						"categoryFrontendVisible": 0,
+						"categoryStatus": 1,
+						"createdOn": "2016-01-29 13:46:55",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 7,
+						"categoryName": "admin",
+						"categoryParent": 5,
+						"categoryLevel": 0,
+						"categoryFrontendVisible": 0,
+						"categoryStatus": 0,
+						"createdOn": "2016-01-29 13:47:19",
+						"modifiedOn": "2016-02-01 12:59:45",
+						"child_data": [
+						  {
+							 "id": 12,
+							 "categoryName": "category1",
+							 "categoryParent": 7,
+							 "categoryLevel": 0,
+							 "categoryFrontendVisible": 0,
+							 "categoryStatus": 0,
+							 "createdOn": "2016-01-29 14:15:48",
+							 "modifiedOn": null,
+							 "child_data": []
+						  },
+						  {
+							 "id": 13,
+							 "categoryName": "category1",
+							 "categoryParent": 7,
+							 "categoryLevel": 0,
+							 "categoryFrontendVisible": 0,
+							 "categoryStatus": 0,
+							 "createdOn": "2016-01-29 14:16:21",
+							 "modifiedOn": "2016-01-29 14:17:03",
+							 "child_data": []
+						  }
+						]
+					 }
+				  ]
+				},
+				{
+				  "id": 6,
+				  "categoryName": "category1",
+				  "categoryParent": 5,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 13:46:55",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 7,
+				  "categoryName": "admin",
+				  "categoryParent": 5,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 0,
+				  "createdOn": "2016-01-29 13:47:19",
+				  "modifiedOn": "2016-02-01 12:59:45",
+				  "child_data": [
+					 {
+						"id": 12,
+						"categoryName": "category1",
+						"categoryParent": 7,
+						"categoryLevel": 0,
+						"categoryFrontendVisible": 0,
+						"categoryStatus": 0,
+						"createdOn": "2016-01-29 14:15:48",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 13,
+						"categoryName": "category1",
+						"categoryParent": 7,
+						"categoryLevel": 0,
+						"categoryFrontendVisible": 0,
+						"categoryStatus": 0,
+						"createdOn": "2016-01-29 14:16:21",
+						"modifiedOn": "2016-01-29 14:17:03",
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 8,
+				  "categoryName": "cat_level_2",
+				  "categoryParent": 0,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 0,
+				  "createdOn": "2016-01-29 13:48:16",
+				  "modifiedOn": "2016-01-29 14:13:48",
+				  "child_data": []
+				},
+				{
+				  "id": 9,
+				  "categoryName": "admifsdvgn",
+				  "categoryParent": 0,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 13:48:33",
+				  "modifiedOn": "2016-02-01 13:00:01",
+				  "child_data": []
+				},
+				{
+				  "id": 10,
+				  "categoryName": "cat_level_3",
+				  "categoryParent": 0,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 14:06:24",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 11,
+				  "categoryName": "cat_level_4",
+				  "categoryParent": 2,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-29 14:08:54",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 12,
+				  "categoryName": "category1",
+				  "categoryParent": 7,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 0,
+				  "createdOn": "2016-01-29 14:15:48",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 13,
+				  "categoryName": "category1",
+				  "categoryParent": 7,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 0,
+				  "createdOn": "2016-01-29 14:16:21",
+				  "modifiedOn": "2016-01-29 14:17:03",
+				  "child_data": []
+				},
+				{
+				  "id": 14,
+				  "categoryName": "test",
+				  "categoryParent": 0,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-30 05:05:20",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 15,
+						"categoryName": "test",
+						"categoryParent": 14,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 0,
+						"categoryStatus": 1,
+						"createdOn": "2016-01-30 05:15:28",
+						"modifiedOn": null,
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 15,
+				  "categoryName": "test",
+				  "categoryParent": 14,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-30 05:15:28",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 16,
+				  "categoryName": "test",
+				  "categoryParent": 2,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-01-30 05:15:38",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 19,
+				  "categoryName": "sdfsdf",
+				  "categoryParent": 0,
+				  "categoryLevel": 0,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": null,
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 20,
+				  "categoryName": "admin22",
+				  "categoryParent": 0,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 0,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-02 06:57:30",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 22,
+				  "categoryName": "testcat123",
+				  "categoryParent": 1,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-06 08:14:55",
+				  "modifiedOn": "2016-02-06 09:58:49",
+				  "child_data": []
+				},
+				{
+				  "id": 24,
+				  "categoryName": "qwerty",
+				  "categoryParent": 1,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-06 09:58:05",
+				  "modifiedOn": "2016-02-06 10:22:22",
+				  "child_data": []
+				},
+				{
+				  "id": 25,
+				  "categoryName": "testcat12a3",
+				  "categoryParent": 1,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-06 10:01:04",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 26,
+				  "categoryName": "wewew",
+				  "categoryParent": 1,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-06 12:24:13",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 27,
+				  "categoryName": "qwerty12345",
+				  "categoryParent": 1,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-06 12:24:32",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 28,
+				  "categoryName": "General",
+				  "categoryParent": 0,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-17 13:00:01",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 29,
+						"categoryName": "tests123",
+						"categoryParent": 28,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:05:44",
+						"modifiedOn": null,
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 29,
+				  "categoryName": "tests123",
+				  "categoryParent": 28,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:05:44",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 30,
+				  "categoryName": "new test",
+				  "categoryParent": 0,
+				  "categoryLevel": 1,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:06:10",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 31,
+						"categoryName": "new test1",
+						"categoryParent": 30,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:06:50",
+						"modifiedOn": null,
+						"child_data": [
+						  {
+							 "id": 34,
+							 "categoryName": "new test11",
+							 "categoryParent": 31,
+							 "categoryLevel": 3,
+							 "categoryFrontendVisible": 1,
+							 "categoryStatus": 1,
+							 "createdOn": "2016-02-25 12:13:02",
+							 "modifiedOn": null,
+							 "child_data": []
+						  },
+						  {
+							 "id": 35,
+							 "categoryName": "new test12",
+							 "categoryParent": 31,
+							 "categoryLevel": 3,
+							 "categoryFrontendVisible": 1,
+							 "categoryStatus": 1,
+							 "createdOn": "2016-02-25 12:13:28",
+							 "modifiedOn": null,
+							 "child_data": []
+						  }
+						]
+					 },
+					 {
+						"id": 32,
+						"categoryName": "new test2",
+						"categoryParent": 30,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:06:56",
+						"modifiedOn": null,
+						"child_data": [
+						  {
+							 "id": 36,
+							 "categoryName": "new test21",
+							 "categoryParent": 32,
+							 "categoryLevel": 3,
+							 "categoryFrontendVisible": 1,
+							 "categoryStatus": 1,
+							 "createdOn": "2016-02-25 12:13:43",
+							 "modifiedOn": null,
+							 "child_data": []
+						  },
+						  {
+							 "id": 37,
+							 "categoryName": "new test22",
+							 "categoryParent": 32,
+							 "categoryLevel": 3,
+							 "categoryFrontendVisible": 1,
+							 "categoryStatus": 1,
+							 "createdOn": "2016-02-25 12:13:49",
+							 "modifiedOn": null,
+							 "child_data": []
+						  }
+						]
+					 },
+					 {
+						"id": 33,
+						"categoryName": "new test3",
+						"categoryParent": 30,
+						"categoryLevel": 2,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:07:01",
+						"modifiedOn": null,
+						"child_data": [
+						  {
+							 "id": 38,
+							 "categoryName": "new test31",
+							 "categoryParent": 33,
+							 "categoryLevel": 3,
+							 "categoryFrontendVisible": 1,
+							 "categoryStatus": 1,
+							 "createdOn": "2016-02-25 12:14:00",
+							 "modifiedOn": null,
+							 "child_data": []
+						  },
+						  {
+							 "id": 39,
+							 "categoryName": "new test32",
+							 "categoryParent": 33,
+							 "categoryLevel": 3,
+							 "categoryFrontendVisible": 1,
+							 "categoryStatus": 1,
+							 "createdOn": "2016-02-25 12:14:07",
+							 "modifiedOn": null,
+							 "child_data": []
+						  }
+						]
+					 }
+				  ]
+				},
+				{
+				  "id": 31,
+				  "categoryName": "new test1",
+				  "categoryParent": 30,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:06:50",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 34,
+						"categoryName": "new test11",
+						"categoryParent": 31,
+						"categoryLevel": 3,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:13:02",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 35,
+						"categoryName": "new test12",
+						"categoryParent": 31,
+						"categoryLevel": 3,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:13:28",
+						"modifiedOn": null,
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 32,
+				  "categoryName": "new test2",
+				  "categoryParent": 30,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:06:56",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 36,
+						"categoryName": "new test21",
+						"categoryParent": 32,
+						"categoryLevel": 3,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:13:43",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 37,
+						"categoryName": "new test22",
+						"categoryParent": 32,
+						"categoryLevel": 3,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:13:49",
+						"modifiedOn": null,
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 33,
+				  "categoryName": "new test3",
+				  "categoryParent": 30,
+				  "categoryLevel": 2,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:07:01",
+				  "modifiedOn": null,
+				  "child_data": [
+					 {
+						"id": 38,
+						"categoryName": "new test31",
+						"categoryParent": 33,
+						"categoryLevel": 3,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:14:00",
+						"modifiedOn": null,
+						"child_data": []
+					 },
+					 {
+						"id": 39,
+						"categoryName": "new test32",
+						"categoryParent": 33,
+						"categoryLevel": 3,
+						"categoryFrontendVisible": 1,
+						"categoryStatus": 1,
+						"createdOn": "2016-02-25 12:14:07",
+						"modifiedOn": null,
+						"child_data": []
+					 }
+				  ]
+				},
+				{
+				  "id": 34,
+				  "categoryName": "new test11",
+				  "categoryParent": 31,
+				  "categoryLevel": 3,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:13:02",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 35,
+				  "categoryName": "new test12",
+				  "categoryParent": 31,
+				  "categoryLevel": 3,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:13:28",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 36,
+				  "categoryName": "new test21",
+				  "categoryParent": 32,
+				  "categoryLevel": 3,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:13:43",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 37,
+				  "categoryName": "new test22",
+				  "categoryParent": 32,
+				  "categoryLevel": 3,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:13:49",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 38,
+				  "categoryName": "new test31",
+				  "categoryParent": 33,
+				  "categoryLevel": 3,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:14:00",
+				  "modifiedOn": null,
+				  "child_data": []
+				},
+				{
+				  "id": 39,
+				  "categoryName": "new test32",
+				  "categoryParent": 33,
+				  "categoryLevel": 3,
+				  "categoryFrontendVisible": 1,
+				  "categoryStatus": 1,
+				  "createdOn": "2016-02-25 12:14:07",
+				  "modifiedOn": null,
+				  "child_data": []
+				}
+			 ]
+		  }
+		}

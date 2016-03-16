@@ -1,0 +1,91 @@
+<div id="breadcrumbs-wrapper" style="margin-bottom:calc(-20px - 1em)">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h1 class="breadcrumbs-title">Experts</h1>
+        <p ng-if="!!appliedFilters && !!appliedFilters.length"> <strong>Filters</strong>: 
+          <span ng-repeat="filter in appliedFilters"><i ng-class="filter.class"></i> {{filter.label}}</span>
+        </p>
+      </div>    
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col s12 m9 l9">
+    <div id="profile-card" class="card col m4 s12" ng-repeat="expert in experts">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="theme/images/user-bg.jpg" alt="user background">
+        </div>
+        <div class="card-content">
+            <img src="theme/images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+            <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                <i class="mdi-action-account-circle"></i>
+            </a>
+
+            <span class="card-title activator grey-text text-darken-4">{{expert.expertName}}</span>
+            <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> {{expert.expertDesignation}} | {{expert.expertOrganisation}}</p>
+            <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> {{expert.expertMobile}}</p>
+            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> {{expert.expertEmail}}</p>
+            <p><a class="btn waves-effect waves-light blue">Book Services</a></p>
+            <p><a class="btn waves-effect waves-light blue">Buy Products</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{expert.expertName}} <i class="mdi-navigation-close right"></i></span>
+            <p>Works as {{expert.expertDesignation}} in {{expert.expertOrganisation}}</p>
+            <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> {{expert.expertMobile}}</p>
+            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> {{expert.expertEmail}}</p>
+            <p><i class="mdi-social-public cyan-text text-darken-2"></i> {{expert.expertWebsite}}</p>
+            <p><i class="mdi-device-airplanemode-on cyan-text text-darken-2"></i> BAR - AUS</p>
+        </div>
+    </div>
+</div>
+<div class="col m3 l3 s12">
+    <div class="card-panel">
+        <h4 class="header2">Filter the results</h4>
+        <ul ng-show="locations.length || categories.length" class="collection">
+          <li class="collection-item dismissable" ng-repeat="location in locations"><i class="mdi-maps-pin-drop"></i> {{location.label}} <a href="#!" class="secondary-content"><i class="mdi-navigation-close"></i></a></li>
+          <li class="collection-item dismissable" ng-repeat="category in categories"><i class="mdi-content-filter-list"></i> {{category.label}} <a href="#!" class="secondary-content"><i class="mdi-navigation-close"></i></a></li>
+        </ul>
+        <div class="row">
+            <form class="col s12">
+              <div>
+                <div class="input-field col s12">
+                  <i class="mdi-maps-pin-drop prefix"></i>
+                  <input id="location" type="text" ng-model="location" ng-change="getFilteredLocations()" autocomplete="off">
+                  <label for="location">Location</label>                  
+                  <ul class="input-field-suggest" ng-if="!!filteredLocations && !!filteredLocations.length">
+                      <li ng-repeat="location in filteredLocations" ng-click="selectLocation(this)">{{location}}</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="input-field col s12">
+                  <i class="mdi-content-filter-list prefix"></i>
+                  <input id="category" type="text" ng-model="category" ng-change="getFilteredCategories()" autocomplete="off">
+                  <label for="category">Category</label>
+                  <ul class="input-field-suggest" ng-if="!!filteredCategories && !!filteredCategories.length">
+                      <li ng-repeat="category in filteredCategories" ng-click="selectCategory(this)">{{category}}</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="input-field col s12">
+                  <i class="mdi-image-style prefix"></i>
+                  <input id="keyword" type="text">
+                  <label for="keyword">Keyword</label>
+                </div>
+              </div>
+              <div>
+                <div class="input-field col s12">
+                  <button class="btn cyan waves-effect waves-light right" type="submit" ng-click="submitFilters()" name="action">Submit
+                    <i class="mdi-content-send right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>

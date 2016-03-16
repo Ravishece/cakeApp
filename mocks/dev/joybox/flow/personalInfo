@@ -1,0 +1,58 @@
+{
+    "status": "Success",
+    "sucMsg": [
+        "SeoFlow",
+        "Records retrieved successfully."
+    ],
+    "errMsg": [],
+    "data": {
+        "SeoFlowModel": [
+            {
+                "id": "1",
+                "flowName": "PersonalInfo",
+                "flowMenuId": "13",
+                "flowStatus": "1",
+                "createdOn": "2016-02-17 13:59:39",
+                "createdBy": "1",
+                "modifiedOn": null,
+                "modifiedBy": "0",
+                "pages": [
+                    {
+                        "id": "1",
+                        "pageCat": "2",
+                        "pageSubcat": "3",
+                        "pageType": "2",
+                        "pageName": "page1",
+                        "pageTag": "php, myadmin, tech",
+                        "pageText": "What is your name?",
+                        "pageImgUrl": "test image",
+                        "pageAudioUrl": "test audio",
+                        "pageIsLastPage": "1",
+                        "pageStatus": "1",
+                        "createdOn": "2016-02-17 13:28:18",
+                        "createdBy": "1",
+                        "modifiedOn": null,
+                        "modifiedBy": "0",
+                        "answers": [
+                            {
+                                "id": "1",
+                                "pageId": "1",
+                                "label": "Name",
+                                "mode": "1",
+                                "placeHolderText": "Enter name",
+                                "fieldName": "name",
+                                "fieldValue": "",
+                                "sortOrder": "0",
+                                "status": "0",
+                                "createdOn": "2016-02-17 13:28:18",
+                                "createdBy": "1",
+                                "modifiedOn": null,
+                                "modifiedBy": "0"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

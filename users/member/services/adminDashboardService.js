@@ -1,0 +1,3 @@
+dashboard.service('adminDashboardService', [function () {
+	   
+}]);

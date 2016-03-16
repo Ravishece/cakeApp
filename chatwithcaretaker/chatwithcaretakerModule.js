@@ -1,0 +1,1 @@
+var chatwithcaretaker = angular.module('Chatwithcaretaker',[]);

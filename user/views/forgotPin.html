@@ -1,0 +1,35 @@
+<section id="login-page" class="row login-form-holder" ng-init="init()">
+    <div class="col s12 z-depth-4 card-panel">
+      <form class="login-form" name="forgot_Pin" role="form" novalidate angular-validator angular-validator-submit="forgotPin(forgot_Pin)">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <h4>Forgot Secure Pin</h4>
+            <p class="center">You can reset your secure pin</p>
+          </div>
+        </div>
+        <div id="card-alert" class="card cyan" ng-show="loginInfo">
+          <div class="card-content white-text">
+            <p ng-bind="loginInfo"></p>
+          </div>
+          <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close" ng-click="loginInfo=''">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" type="email" name="email" required ng-model="email"/>
+            <label for="username" class="center-align">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button type="submit" class="btn waves-effect waves-light col s12">Reset Secure Pin</button>
+          </div>
+          <div class="input-field col s12">
+            <p class="margin sign-up"><a href="#/login">Login</a> <a href="#/register" class="right">Register</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+</section>

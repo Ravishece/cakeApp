@@ -1,0 +1,135 @@
+/* chatwithcaretaker styles - START*/
+.cwc-section{
+	min-height: 500px;
+}
+
+.chat-container{
+	margin: 1rem;	
+	padding: 1rem;
+	position: relative;
+}
+
+.chat-block{
+	border: dashed 1px black;
+	min-height: 20px;
+	width: 80%;
+	padding: 10px;
+}
+
+.user-chat{
+	top: 200px;
+	float: right;
+    text-align: right;
+    position: relative;
+}
+
+/* chatwithcaretaker styles - END*/
+html {
+	width: 100%;
+}
+#site-layout-example-right {
+	height: auto;
+}
+.sidebar-collapse {
+	top: 11px;
+	left: 10px;
+	z-index: 998;
+	position: fixed;
+}
+h1.logo-wrapper {
+    margin-left: 40px;
+}
+.fullscreen #main {
+	padding-left:0px;
+	transition: padding 0.2s linear;
+}
+ #left-sidebar-nav {
+ 	transition: width 0.5s linear;
+ }
+.fullscreen #left-sidebar-nav {
+	width: 0px;
+	overflow: hidden;
+	transition: width 0.5s linear;
+}
+#profile-dropdown.active {
+	display: block;
+    opacity: 1;
+    top: 50px;
+    right: 13px;
+}
+#notifications-dropdown.active {
+	display: block;
+    opacity: 1;
+    right: 55px;
+    top: 64px;
+}
+#right-sidebar-nav.active #chat-out {
+	width: 300px;
+    right: 0px;
+}
+
+.login-form-holder {
+	width: 300px;
+}
+.input-field .prefix ~ .select-wrapper{
+    margin-left: 3rem;
+    width: 92%;
+    width: calc(100% - 3rem);
+}
+ng-view {
+	min-height: 500px;
+	display: block;
+}
+/*--------- user section ------------*/
+label.control-label.has-error.validationMessage, label.control-label.has-error.validationMessage.active{
+	top: 48px;
+	color:#ff4081;
+	font-size: 0.8rem;
+	transform:initial;
+}
+.input-field.has-error i.prefix, .input-field.has-error label  {
+	color:#ff4081;
+}
+.input-field.has-error input{
+	border-bottom: 1px solid #ff4081;
+    box-shadow: 0 1px 0 0 #ff4081;
+}
+.input-field .prefix ~ div.select-wrapper > option {
+	display: none;
+}
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+}
+/*------------------------------------------
+    Experts Module 
+------------------------------------------*/
+.input-field-suggest{ position:absolute; margin-left:3rem; margin-top:-15px; border:1px solid #ccc; box-shadow:0 0 2px rgba(0,0,0,0.2); width:calc(100% - 4.5rem); z-index:91; }
+.input-field-suggest li{ padding:3px 10px; background-color:#fff; cursor:pointer; }
+.input-field-suggest li:nth-of-type(2){ background-color:#fef; }
+.input-field-suggest li:hover{ background-color:#dedede; }
+
+
+
+/* Cake order App*/ 
+.custom-container .card-widgets{
+	margin-top: 1rem;
+}
+
+.custom-container #profile-card .card-image{
+	height: auto;
+}
+
+.custom-container .card .card-image img{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.custom-container .btn-floating.btn-large{
+	position: absolute;
+	top: 10%;
+	left: 3%;
+}
+
+.card.ccard{
+	
+}
