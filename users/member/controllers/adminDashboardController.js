@@ -40,7 +40,8 @@ define(['app'], function (app) {
 		}
 		
 		function completedProcess(){
-			
+			$scope.selectedOrder.status = 'pending';
+			$('.capture-image-container').show();
 		}
 		
 		$http.get('/cakeapp/mockup/orderDetails.json').success(function (response) { 

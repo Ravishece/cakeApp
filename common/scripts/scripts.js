@@ -26,5 +26,20 @@ $(function(){
         $('.js-cake-serve').removeClass('f-gray1');
     });
     
+    $('body').on('click','.camera-img',function(){
+        //$('.dropdown-button').click();
+        alert('image captured');
+    });
     
 })
+
+  $(function() {
+
+//    // In this case the initialization function returns the already created instance
+    //var inst = $('[data-remodal-id=modal2]').remodal();
+//
+//inst.open();
+//    inst.close();
+//    inst.getState();
+//    inst.destroy();
+  });
