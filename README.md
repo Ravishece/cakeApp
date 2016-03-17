@@ -1,40 +1,7 @@
-# xPander
+### CAKE APP - Samsclub - Hackathon ###
 
-GIT Page src URL : - https://github.com/hoorecon/xPander.git
+Sample App which defines the customer and store associate flows in a typical bakery.
 
-Work segregation on Feb 23 :-
+Customer usually logs into the site and starts ordering a cake. He has the option to chose either from a set of signature cakes or else he can also customize cake on his own. Once customized or selected from a signature cake, he would be shown the preview of thecake he selected along with the billing details. He can then proceed to the payment section.
 
-Siva :- 
-
-1) Base Framework - Including routing, modularisation, loader integration, etc.
-1) AMD integration to load pages (controllers) asynchronously
-2) User Profile page - Markup and Service Integration (MSI)
-3) Caretaker page - Manage caretakers (addition/deletion) - MSI
-4) Announcements - MSI
-Basically all items related to right side menu 
-
-Simbu :-
-1) Dashboard page - carousel integration in center content, Updates/hot news on right side content,
-Right side menu - linking to different pages, Left side push pull menu (animation effect), 
-2) CSS styling integration to completed pages.
-
-
-Kummi :-
-
-1) Expert Page - Markup and Service Integration (MSI)
-2) Expert sub pages - MSI
-3) Expert page - Filter Incorporation, scheduler, etc, please refer the document 'JoyBox - NewYear Release - Mockups.pdf' (2.6 MB) for further details.
-
-Ravi :-
-
-1) Chat with Caretaker Page - Markup and Service Integration (MSI)
-2) Affirmation page - similar to Caretaker page
-3) Guided Meditation page - similar to Caretaker page
-
--------------------------------------------------------------XXXXXXXXXXXXXXXXXX----------------------------------------------------------------
-Project Worklog :- 
-
-Feb 22 - Primary discussion about App features - Siva, Kummi and Ravi.
-Feb 23 - Expelled Xamarin from development and decided to use phonegap for hybrid apps as the app is gonna be responsive. Work segregation done.
-Feb 24 - 
-
+The store associate has a seperate login in which he can view the items ordered by customers in his bakery along with the status. The associate can then start baking the cake or can also forward it to a third party baker, who will bake the cake accordingly. Once the cake is baked, either by the baker or the associate, the associate will change the status of the order to ready for delivery along with  a snap of the baken cake (image captured through mobile). The order once delivered can then be changed to delivered and then a feedback will be trigerred seperately to the customer to capture the feedback about the cake delivered. This can again be saved along with the order details for reference in future.
