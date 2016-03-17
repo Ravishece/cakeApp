@@ -4,7 +4,10 @@
 
 tr th{ background:#5B7890; border-right:1px solid #82A1B1; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; font-weight:300; color:#fff;}
 
-
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
 
 .container p {
     margin: 10px 0 10px;
@@ -71,4 +74,427 @@ td.dollar-price {
     display: inline-block;
     width: 150px;
     float: right;
+}
+
+/* Cake wizard */
+/* Rectangle 82: */
+.widget-placeholder{
+background: #FFFFFF;
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50), inset 0px -1px 17px 0px rgba(0,0,0,0.20);
+border-radius: 8px;
+width: 1070px; padding:15px; margin:10px;
+
+}
+.progress{
+
+
+}
+
+.hd-typ2 {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+.section-1 {
+    width: 67.5%;
+    float: left;
+}
+
+.box-typ9 {
+
+    background: #f0f0f0;
+    border-color: #c7c7c7;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0;
+    padding: 10px;
+        background: #f0f0f0 url("/cakeapp/images/bg-box-typ9.gif") repeat-x scroll left top;
+    /*width: 67.5%;*/
+}
+.progress{
+ 
+    /*width: 67.5%;*/
+    height: 55px;
+    background: #F5F5F5;
+}
+a {
+    outline: medium none;
+    text-decoration: none;
+}
+.wiz-img {
+    display: inline-block;
+    margin-right: -2px;
+    min-height: 1px;
+    padding: 1px;
+    vertical-align: top;
+    width: 110px;
+}
+.img-square .img {
+    background-position: 0 0;
+}
+.wiz-img .img {
+    background: rgba(0, 0, 0, 0) url("/cakeapp/images/cakesteps1.png") no-repeat scroll 0 0;
+    height: 66px;
+
+}
+.img-square .img {
+    background-position: 0px 0;
+}
+.img-round .img {
+    background-position: -81px 0;
+}
+.img-heart .img {
+    background-position: -171px 0;
+}
+.img-letter .img {
+    background-position: -261px 0;
+}
+.img-num .img {
+    background-position: -351px 0;
+}
+
+.wiz-img .name, .wiz-img .img {
+    color: #333333;
+    display: block;
+    font-size: 93%;
+    text-align: center;
+}
+.progress ul{
+    padding:0; margin:0;
+
+    border: 1px solid #ccc;
+    clear: both;
+    height: 55px;
+    border-right: none;
+
+}
+
+.progress li {
+    display: inline;
+    float: left;
+    width: 140px;
+    text-align: center;
+    font-size: 11px;
+    padding: 5px;
+}
+
+span.steps-wz {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.progress .active-steps{
+    background: #59B51A;
+    color: #fff;
+    border-right: 1px solid #1FA05E;
+}
+.progress li.inactive-steps {
+    background-color: #E2E2E2;
+    color: #A2A3A2;
+    border-right: 1px solid #BFBFBF;
+}
+
+.custom-list {
+    /*border: 1px solid;*/
+    width: 31%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    /*padding: 10px;*/
+}
+
+.select-shape {
+    border: 2px solid #00AB2E;
+    padding: 5px;
+}
+.box-typ9 {
+    margin-bottom: -1px;
+}
+.box-typ9.pd15 {
+    background: #F1F1F1;
+
+}
+
+h2.hd-typ2.f-gray1 {
+    /* background: #A2A1A1; */
+    color: #AFA9A9;
+    font-size: 18px;
+}
+.box-typ13 {
+    background: rgba(0, 0, 0, 0) url("/cakeapp/images/bg-box-typ13.gif") repeat-x scroll left top;
+}
+
+.btn-bar {
+    height: 47px;
+    padding: 15px 15px 10px;
+    position: relative;
+    text-align: right;
+}
+.btn2 {
+    background: rgba(0, 0, 0, 0) url("/cakeapp/images/nextbtn.png") no-repeat scroll 0 0;
+    border: none;
+    width: 112px;
+    height: 35px;
+    background-size: 100%;
+}
+
+.cake-img img {
+ 
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    margin: auto auto 10px;
+}
+.section-block{ border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding: 10px 0; margin-top: -1px;}
+.section-block p {
+    color: #ca2b2b;
+    font-size: 9px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+
+}
+.section-cknm {
+    color: #226dd3;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.value {
+    float: right;
+}
+.section-cknmprop {
+    color: #226dd3;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.cknmprop {
+    color: #000;
+    font-size: 11px;
+    font-weight: normal;
+}
+.prop{
+
+    color: #000;
+    font-size: 11px;
+    font-weight: normal;float: right;
+}
+.section-cknm.sub-total {
+    float: right;
+    font-weight: 500;
+    width: 170px;
+}
+
+.type-cake a {
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    height: 50px;
+    margin: 5px 10px;
+    padding: 10px;
+    text-align: center;
+    width: 115px;
+   /* background: #F5F3E1;*/
+    background: #FFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.type-cake a.active{
+    background: #F5F3E1;
+    }
+
+    .img-size .img {
+    background-position: 10px -76px;
+}
+.inline-notification {
+    background: #F5C35E none repeat scroll 0 0;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+}
+.section-block.highlite{
+    background: rgb(246, 246, 246) none repeat scroll 0 0;
+}
+.mrg10-T {
+    margin: 10px 0;
+}
+
+.addbtn {
+    background-position: -95px 0;
+    height: 25px;
+    vertical-align: middle;
+    width: 44px;
+}
+.btn1, .btn2, .btn3 {
+    cursor: pointer;
+}
+.clearbtn {
+    background-position: -95px -32px;
+    height: 25px;
+    vertical-align: middle;
+    width: 53px;
+}
+.txtbox {
+    width: 360px;
+        border: 1px solid #ccc;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 93%;
+    height: 30px;
+    margin-right: -3px;
+    padding: 5px;
+    vertical-align: middle;
+}
+.btn3 {
+    background: #00c853 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    margin: 0 10px;
+    width: 60px;
+    border: none;
+}
+
+.cs-001 .wiz-img {
+    margin-right: -5px;
+}
+.img-blue .img {
+    background-position: -360px -228px;
+}
+.img-darkbrown .img {
+    background-position: -450px -228px;
+}
+.img-gold .img {
+    background-position: 0 -304px;
+}
+.img-lightgreen .img {
+    background-position: -90px -304px;
+}
+.img-green .img {
+    background-position: -180px -304px;
+}
+.img-gray .img {
+    background-position: -270px -304px;
+}
+.img-lightbrown .img {
+    background-position: -360px -304px;
+}
+.img-lilac .img {
+    background-position: -450px -304px;
+}
+.img-orange .img {
+    background-position: 0 -380px;
+}
+.img-pink .img {
+    background-position: -90px -380px;
+}
+.img-purple .img {
+    background-position: -180px -380px;
+}
+.img-red .img {
+    background-position: -270px -380px;
+}
+.img-silver .img {
+    background-position: -360px -380px;
+}
+.img-sky .img {
+    background-position: -450px -380px;
+}
+.img-yellow .img {
+    background-position: 0 -456px;
+}
+.img-violet .img {
+    background-position: -90px -456px;
+}
+.img-white .img {
+    background-position: -535px -379px;
+
+
+}
+
+.cs-001 .wiz-img {
+    display: inline-block;
+    margin-right: -2px;
+    min-height: 1px;
+    padding: 1px;
+    vertical-align: top;
+    width: 95px;
+}
+.img-candles .img {
+    background-position: -163px -456px;
+}
+.img-noveltycandles .img {
+    background-position: -256px -456px;
+}
+ .red{background-color: none !important;}
+.wiz-img .red {
+    color: #ca2727;
+    background-color: #f1f1f1 !important;
+}
+
+.add-msg .tooltip-typ1 {
+    display: block;
+    padding: 8px 10px;
+}
+.box-typ11{
+
+    background: #ccc;
+    border: 1px solid #000;
+}
+
+.tooltip-typ1.tooltip.crv.box-typ11 {
+    background: #FFF8DA none repeat scroll 0 0;
+    border: 1px solid #D2D2D2;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.cyan{
+ background-color:#ECF0F1 !important;
+}
+.mrg5-B {
+    margin-bottom: 5px;
+}
+.hd-typ2 {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+select#ddlCollectBakery {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    display: block;
+    height: 33px;
+    margin: 10px 0;
+}
+
+.fields > select {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    display: block;
+    height: 33px;
+    width: 170px;
+}
+.frm-txtbox {
+    background: #fff none repeat scroll 0 0;
+}
+.fields .frm-txtbox {
+    background: #fff none repeat scroll 0 0;
+    height: 33px;
+    width: 166px !important;
 }
