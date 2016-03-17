@@ -108,102 +108,81 @@
 
                                             <div class="progress">
                                                 <ul>
-                                                    <li class="active-steps">
+                                                    <li class="{{step1Active}}">
                                                         <span class="steps-wz">1</span>
                                                         <span>SHAPE, SIZE & Type</span>
                                                     </li>
-                                                    <li class="inactive-steps">
+                                                    <li class="{{step2Active}}">
                                                         <span class="steps-wz">2</span>
                                                         <span>FLAVOURS</span>
                                                     </li>
-                                                    <li class="inactive-steps">
+                                                    <li class="{{step3Active}}">
                                                         <span class="steps-wz">3</span>
                                                         <span>DECORATION</span>
                                                     </li>
-                                                    <li class="inactive-steps">
+                                                    <li class="{{step4Active}}">
                                                         <span class="steps-wz">4</span>
                                                         <span>ACCESSORIES</span>
                                                     </li>
-                                                    <li class="inactive-steps">
+                                                    <li class="{{step5Active}}">
                                                         <span class="steps-wz">5</span>
                                                         <span>CONFIRM</span>
                                                     </li>
-
                                                 </ul>
 
                                             </div>
 
                                             <div class="box-typ9">
 
-                                            <h2 class="hd-typ2">Customize your Cake</h2>
+                                            <!--<h2 class="hd-typ2">Customize your Cake</h2>-->
 
-                                            <div class="cs-001">
-                                                <a id="" ng-repeat="shape in cakeSpec.shapes" class="{{'wiz-img ' + shape.image }}" href="javascript:;">
-                                                    <span class="img">&nbsp;</span>
-                                                    <span class="name">{{shape.name}}</span>
-                                                </a>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="disable-cakeType">
-                                            <div class="box-typ9 pd15 clearfix">
-                                                <h2 class="hd-typ2 f-gray1">Select your type of cake</h2>
-                                                <div class="type-cake">
-                                                    <a href="#" class="active">FRESH CREAM</a>
-                                                    <a href="#" class="">CHOC FRESH CREAM</a>
-                                                    <a href="#" class="">BUTTER CREAM</a>
-                                                    <a href="#" class="">CHOC BUTTER CREAM</a>
-                                                    <a href="#" class="">ICING</a>
+                                            <div class="step1-content" ng-show="visibleContent === 'step1-content'">
+                                                <div class="cs-001">
+                                                    <h2 class="hd-typ2">Select your shape of cake</h2>
+                                                    <a id="" ng-repeat="shape in cakeSpec.shapes" class="{{'wiz-img js-select-shape ' + shape.image + ' ' + shape.selected}}" ng-click="selectShape(shape)" href="javascript:;">
+                                                        <span class="img">&nbsp;</span>
+                                                        <span class="name">{{shape.name}}</span>
+                                                    </a>
+                                                </div>
+                                                <div class="disable-cakeType">
+                                                    <div class="box-typ9 pd15 clearfix">
+                                                        <h2 class="hd-typ2 js-cake-type f-gray1">Select your type of cake</h2>
+                                                        <div class="type-cake">
+                                                            <a href="javascript:void(0)" ng-repeat="type in cakeSpec.types" class="{{'js-select-type activeclass ' + type.selected}}" ng-click="selectType(type)">{{type.name}}</a>
+                                                            
+                                                        </div>
+        
+                                                    </div>
                                                 </div>
 
+                                            <div class="disable-cakeType">
+                                                <div class="box-typ9 pd15">
+                                                    <h2 class="hd-typ2 js-cake-serve f-gray1">How many people do you need to serve? What size cake do you need?</h2>
+                                                    <div class="cs-001 serve-cake">
+                                                        
+                                                        <a href="javascript:;" ng-repeat="size in cakeSpec.sizes" class="{{'wiz-img img-size ' + size.image + ' ' + size.selected}}" ng-click="selectSize(size)">
+                                                            <span class="img">&nbsp;</span> 
+                                                            <span class="name">{{size.inch}}<br> {{size.portion}}</span>
+                                                        </a>
+                                                        <div class="inline-notification">A {{selectedSpec.size.inch}} cake will serve about {{selectedSpec.size.portion}} </div>
+                                                    </div>
+    
+                                                </div>  
                                             </div>
-                                        </div>
-
-                                        <div class="disable-cakeType">
-                                            <div class="box-typ9 pd15">
-                                                <h2 class="hd-typ2 f-gray1">How many people do you need to serve? What size cake do you need?</h2>
-                                                <div class="cs-001">
-                                                    <a href="javascript:;" class="wiz-img img-size s1 select-shape" id="csh_9">
-                                                        <span class="img">&nbsp;</span>
-                                                        <span class="name">8”<br> 10 - 15 Portion</span>
-                                                    </a>
-                                                    <a href="javascript:;" class="wiz-img img-size s2" id="">
-                                                        <span class="img">&nbsp;</span>
-                                                        <span class="name">10”<br> 15 - 20 Portion</span>
-                                                    </a>
-
-                                                    <a href="javascript:;" class="wiz-img img-size s3" id="">
-                                                        <span class="img">&nbsp;</span>
-                                                        <span class="name">12”<br> 20 - 30 Portion</span>
-                                                    </a>
-
-                                                    <a href="javascript:;" class="wiz-img img-size s5" id="">
-                                                        <span class="img">&nbsp;</span>
-                                                        <span class="name">14”<br> 30 - 40 Portion</span>
-                                                    </a> 
-
-                                                    <a href="javascript:;" class="wiz-img img-size s6" id="">
-                                                        <span class="img">&nbsp;</span>
-                                                        <span class="name">18”<br> 50 - 60 Portion</span>
-                                                    </a> 
-                                                     <a href="javascript:;" class="wiz-img img-size s6" id="">
-                                                        <span class="img">&nbsp;</span>
-                                                        <span class="name">20”<br> 60 - 80 Portion</span>
-                                                    </a>                                            
+                                            
+                                            <div class="btn-bar box-typ13 custom-footer-btn">
+                                                <input type="button" ng-click="showContent('step2-content')" class="btn2 wiz-nextbtn" name="Next">
                                             </div>
-
-                                            <div class="inline-notification">A 8” cake will serve about 10 - 15 portions </div>
-
-
-                                            </div>
+                                            
+                                    </div>
                                             <!-- Step 2 starts here -->
-
+                                    <div class="step2-content" ng-show="visibleContent === 'step2-content'">
                                                 <div class="disable-cakeType">
                                                     <div class="box-typ9 pd15 clearfix">
                                                         <h2 class="hd-typ2 f-gray1">Do you want vanilla or chocolate sponge?</h2>
                                                         <div class="type-cake">
-                                                            <a class="active" href="#">VANILLA</a>
-                                                            <a class="" href="#">CHOCOLATE</a>
+                                                            <a class="active" href="javascript:;">VANILLA</a>
+                                                            <a class="" href="javascript:;">CHOCOLATE</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -251,10 +230,17 @@
                                             </div>
 
                                         </div>
-                                         </div>                                                
-
+                                         </div>        
+                                         
+                                         <div class="btn-bar box-typ13 custom-footer-btn">
+                                                <input type="button" ng-click="showContent('step3-content')" class="btn2 wiz-nextbtn" name="Next">
+                                            </div>
+                                            
+                                            
+                                    </div>
                                         <!-- Step 2 Ends Here -->
 
+                                    <div class="step3-content" ng-show="visibleContent === 'step3-content'">
                                         <!-- Step 3 Starts Here -->
                                              <div class="disable-cakeType">
                                                     <div class="box-typ9 pd15 clearfix">
@@ -341,7 +327,7 @@
                                                             <br>
                                                                                                     
                                                             <span><img alt="Uploaded Image" style="display:none;vertical-align:bottom;" src="" id="imgUploadedImage"></span>
-                                                            <input type="button" title="Remove Image" class="btn3 removebtn" onclick="return setImage(0)" style="display:none;vertical-align:bottom;" id="btnRemove">
+                                                            <input type="button" title="Remove Image" class="btn3 removebtn" style="display:none;vertical-align:bottom;" id="btnRemove">
                                                             <input type="hidden" value="" id="hdnRootUrl">                                   
                                                              
                                                               <input type="hidden" id="hdnImagePath" name="hdnImagePath" value="">
@@ -350,10 +336,16 @@
 
                                                     </div>
                                                 </div>
-
+                                                
+                                                <div class="btn-bar box-typ13 custom-footer-btn">
+                                                    <input type="button" ng-click="showContent('step4-content')" class="btn2 wiz-nextbtn" name="Next">
+                                                </div>
+                                    </div>
                                         <!-- Step 3 Ends Here -->
 
                                         <!-- Step 4 Starts Here -->
+                                        
+                                        <div class="step4-content" ng-show="visibleContent === 'step4-content'">
                                             <div class="box-typ9 pd15 delivery-typ1 delivery-js">
                                                 <h2 class="hd-typ2">
                                                     Would you like to collect your order from nearest Sam's club or do you want us to deliver it to you?
@@ -391,11 +383,11 @@
                                                         <li>
                                                             <label class="lbl"><span style="color:Red">*</span>&nbsp;Collection date</label>
                                                             <div class="fields">
-                                                                <input type="text" style="width:150px;" class="frm-txtbox" onblur="setDate()" title="Collection Date" id="txtCollectionDate" name="txtCollectionDate">                                                              
+                                                                <!--<input type="text" style="width:150px;" class="frm-txtbox" onblur="setDate()" title="Collection Date" id="txtCollectionDate" name="txtCollectionDate">                                                              -->
                                                                 
-                                                                <input type="hidden" value="javascript: show_calendar('frmWizard.txtCollectionDate', 'frmWizard.txtCollectionDate', '2', '2016', 'DD/MM/YYYY','setDate()');" id="hdnDate">
+                                                                <input type="date" value="javascript: show_calendar('frmWizard.txtCollectionDate', 'frmWizard.txtCollectionDate', '2', '2016', 'DD/MM/YYYY','setDate()');" id="hdnDate" style="width:200px;">
                                                                 
-                                                                <a class="icon ico-calender" id="dtCollection" href="javascript: show_calendar('frmWizard.txtCollectionDate', 'frmWizard.txtCollectionDate', '2', '2016', 'DD/MM/YYYY','setDate()');;"></a>
+                                                                <!--<a class="icon ico-calender" id="dtCollection" href="javascript: show_calendar('frmWizard.txtCollectionDate', 'frmWizard.txtCollectionDate', '2', '2016', 'DD/MM/YYYY','setDate()');;"></a>-->
                                                                 
                                                                 <input type="hidden" value="16/03/2016" id="hdnNow" name="hdnNow">                                                                                                                              
                                                                 <div id="divColerr" style="display:none"><font color="red"> Collection date cannot be past date </font></div>
@@ -429,12 +421,11 @@
                                                             <label class="lbl"><span style="color:Red">*</span>&nbsp;What occasion is the cake for</label>
                                                             <div class="fields">
                                                             <select onchange="validateAndSetOccasion()" id="ddlOccasion" name="ddlOccasion">
-    <option value="0" selected="selected">Select Occasion</option>
-    <option value="1">Birthday</option>
-    <option value="2">Anniversary</option>
-    <option value="3">Other</option>
-
-</select>
+                                                                <option value="0" selected="selected">Select Occasion</option>
+                                                                <option value="1">Birthday</option>
+                                                                <option value="2">Anniversary</option>
+                                                                <option value="3">Other</option>
+                                                            </select>
                                                             <span style="display:none" id="spanOccasion" class="icon ico-mandatory">*</span>
                                                             <input type="hidden" value="0" id="hdnOccasion" name="hdnOccasion">
                                                             <input type="hidden" value="0" id="hdnOccasionValue" name="hdnOccasionValue">
@@ -451,18 +442,40 @@
                                                         
                                                     </ul>
 
-                                        </div>                                          
+                                        </div>              
+                                        
+                                        <div class="btn-bar box-typ13 custom-footer-btn">
+                                                <input type="button" ng-click="showContent('step5-content')" class="btn2 wiz-nextbtn" name="Next">
+                                            </div>
+                                            
+                                </div>
                                         <!-- Step 4 Ends Here -->
 
 
+                                <div class="step5-content" ng-show="visibleContent === 'step5-content'">
+                                <!--    <div class="step5-content">-->
+                                        <!--<div class="btn-bar box-typ13 custom-footer-btn">
+                                                <input type="button" class="btn2 wiz-nextbtn" name="Submit">Submit</input>
+                                        </div>-->
+                                        <div class="row">
+                                            <p>Your Order Details</p>
+                                        </div>
+                                        <div id="step5FinalContent"></div>
+                                        <div class="btn-bar box-typ13 custom-footer-btn">
+                                            <button class="btn waves-effect waves-light right submit-btn-custom" onclick="Materialize.toast('<span>Order Submitted Successfully</span>', 2000)" type="submit" name="action" ng-click="submitCakeOrder()">Submit your Order
+                                                <i class="mdi-content-send right"></i>
+                                            </button>
+                                        </div>
+                                </div>
+                                
                                         </div>
 
 
-                                        <div class="btn-bar box-typ13">
+                                        <!--<div class="btn-bar box-typ13">
                                             <input type="button" style="display:none;" id="btnClickhere" title="Click Here for More Information" class="btn2 wiz-clickbtn" name="click">
                                             <input type="button" id="btnNextpn2" class="btn2 wiz-nextbtn" name="Next">
  
-                                        </div>
+                                        </div>-->
 
                                     </div>
 
@@ -471,7 +484,7 @@
 
 
 
-                                    <div class="custom-list">
+                                    <div class="custom-list" id="customList">
                                             <div class="cake-img"><img alt="" class="cake-shape" src="images/wizard-noimg-mainimg.jpg"></div>
                                             <div class="section-block clearfix">
                                                 <p>Cake colours, images and layout are for illustration ONLY. 
@@ -484,29 +497,30 @@ All our cakes are hand finished so the final product may vary.</p>
   
        
 
-                                              <div class="cksteps-1">
+                                              <div class="cksteps-1" ng-show="step2Active === 'active-steps'">
                                                  <div class="section-block highlite clearfix">
                                                      <div class="section-cknm"><span class="cknm">Shape, Size & Type</span> <span class="value">$24.00</span></div>
                                                 </div>
 
 
                                                 <div class="section-block clearfix">
-                                                     <div class="section-cknmprop"><span class="cknmprop">Shape</span> <span class="prop">Square</span></div>
+                                                     <div class="section-cknmprop"><span class="cknmprop" >Shape</span> <span class="prop">{{selectedSpec.shape.name}}</span></div>
 
-                                                      <div class="section-cknmprop"><span class="cknmprop">Type</span> <span class="prop">Choc Fresh Cream</span></div>
+                                                     <div class="section-cknmprop"><span class="cknmprop">Type</span> <span class="prop">{{selectedSpec.type.name}}</span></div>
 
-                                                     <div class="section-cknmprop"><span class="cknmprop">Size</span> <span class="prop">14"</span></div>
+                                                     <div class="section-cknmprop"><span class="cknmprop">Size</span> <span class="prop">{{selectedSpec.size.image}} - serves {{selectedSpec.size.portion}}</span></div>
 
                                                 </div>
+                                                <div class="section-block clearfix">
+                                                     <div class="section-cknm sub-total"><span class="cknm">Admin Fee</span> <span class="value">$1.50</span></div>
+                                                     <div class="section-cknm sub-total"><span class="cknm">Total</span> <span class="value">$25.50</span></div>
+                                                </div>
                                             </div>
-                                             <div class="section-block clearfix">
-                                                 <div class="section-cknm sub-total"><span class="cknm">Admin Fee</span> <span class="value">$1.50</span></div>
-                                                  <div class="section-cknm sub-total"><span class="cknm">Total</span> <span class="value">$25.50</span></div>
-                                            </div>
+                                             
 
                                           <!-- Step-2 RightH starts -->
 
-                                       <div class="cksteps-1">
+                                       <div class="cksteps-2" ng-show="step3Active === 'active-steps'">
                                                  <div class="section-block highlite clearfix">
                                                      <div class="section-cknm"><span class="cknm">Flavours</span> <span class="value">$5.00</span></div>
                                                 </div>
@@ -524,7 +538,7 @@ All our cakes are hand finished so the final product may vary.</p>
                                             </div>
                                             <!-- Step-2 RightH Ends -->
                                           <!-- Step-3 RightH starts -->
-                                              <div class="cksteps-1">
+                                              <div class="cksteps-1" ng-show="step4Active === 'active-steps'">
                                                  <div class="section-block highlite clearfix">
                                                      <div class="section-cknm"><span class="cknm">Decoration</span> <span class="value">$5.00</span></div>
                                                 </div>
@@ -542,17 +556,17 @@ Colour : Blue</span></div>
                                                     <div class="section-cknmprop"><span class="cknmprop">Novelty Candles:</span> <span class="prop">Colour : Blue</span></div>
 
                                                 </div>
+                                                <div class="section-block clearfix">
+                                                    <p>ALLERGY WARNING: Traces of nuts may be found in the cake</p>
+                                                </div>
+                                                
                                             </div>
                                             <!-- Step-3 RightH Ends -->  
                                             
                                             <!-- Step-4 Starts here -->
                                             <!-- Step-4 Ends here -->                                        
 
-                                            <div class="section-block clearfix">
-                                                <p>ALLERGY WARNING: Traces of nuts may be found in the cake</p>
-
-
-                                            </div>
+                                            
 
                                     </div>
                                     

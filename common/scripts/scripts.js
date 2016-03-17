@@ -16,4 +16,15 @@ $(function(){
         $('.dropdown-button').click();
     });
     
+    $('body').on('click','.js-select-shape',function(){
+        $('.type-cake').show();
+        $('.js-cake-type').removeClass('f-gray1');
+    });
+    
+    $('body').on('click','.js-select-type',function(){
+        $('.serve-cake').show();
+        $('.js-cake-serve').removeClass('f-gray1');
+    });
+    
+    
 })

@@ -164,3 +164,33 @@ order-table td{
 	width: auto;
 	border-radius: 0;
 }
+
+
+
+/**/
+.box-typ13.custom-footer-btn{
+	background: none;
+}
+
+.btn.submit-btn-custom{
+	background: green;
+}
+
+.type-cake, .serve-cake{
+	display: none;
+}
+
+/* Ravi styles for custom.css*/
+/*
+.progress li.inactive-steps {
+    background-color: #E2E2E2;
+    color: #A2A3A2;
+    border-right: 1px solid #BFBFBF;
+}*/
+
+.progress li {
+    background-color: #E2E2E2;
+    color: #A2A3A2;
+    border-right: 1px solid #BFBFBF;
+}
+/* Ravi styles for custom.css*/

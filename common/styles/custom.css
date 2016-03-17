@@ -191,11 +191,11 @@ span.steps-wz {
     color: #fff;
     border-right: 1px solid #1FA05E;
 }
-.progress li.inactive-steps {
+/*.progress li.inactive-steps {
     background-color: #E2E2E2;
     color: #A2A3A2;
     border-right: 1px solid #BFBFBF;
-}
+}*/
 
 .custom-list {
     /*border: 1px solid;*/
