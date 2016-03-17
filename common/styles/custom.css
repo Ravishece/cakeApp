@@ -244,7 +244,7 @@ h2.hd-typ2.f-gray1 {
     text-align: right;
 }
 .btn2 {
-    background: rgba(0, 0, 0, 0) url("πø/cakeapp/images/nextbtn.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("/cakeapp/images/nextbtn.png") no-repeat scroll 0 0;
     border: none;
     width: 112px;
     height: 35px;
@@ -624,3 +624,6 @@ h1.logo-wrapper img {
     width: 90%;
 }
  
+.css-custom-img{
+    display: none;
+}

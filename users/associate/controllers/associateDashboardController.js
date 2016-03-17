@@ -1,7 +1,7 @@
 define(['app'], function (app) {
 	app.controller('associateDashboardController', ['$scope', '$http','$location', function ($scope, $http, $location) {
 		
-		$scope.customCakeOrderScreen = true;
+		$scope.customCakeOrderScreen = false;
 		
 		$scope.submitCakeOrder = function(){
 			$scope.customCakeOrderScreen = false;
@@ -94,6 +94,7 @@ define(['app'], function (app) {
 				case 'step4-content':$scope.step4Active = activeBreadcrumb;
 				break;
 				case 'step5-content':$scope.step5Active = activeBreadcrumb;
+				$('.css-custom-img').show();
 				$('#step5FinalContent').html($('#customList').html());
 				$('#customList').hide();
 				break;
