@@ -50,101 +50,7 @@
                           
                     </div>
                     <div class="row">
-                    
-                    <!--<table class="table table-condensed order-table" >
-                        <thead>
-                          <tr>
-                            <th>Image</th>
-                            <th>Item Description</th>
-                            <th>Order ID</th>
-                            <th>Member name/email</th>
-                            <th>Member Contact</th>
-                            <th>Order Date</th>
-                            <th>Order Total</th>
-                            <th>Order Status</th>
-                            <th class="cta-head"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td> <img src="images/cake-order.png" /></td>
-                            <td>10” Round Cake, <br />Serves 10 -12  </td>
-                            <td>CK198234</td>
-                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
-                            <td>9343927070</td>
-                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
-                            <td>$18.00</td>
-                            <td class="processed">Processed</td>
-                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
-                          </tr>
-                          <tr>
-                            <td> <img src="images/cake-order.png" /></td>
-                            <td>10” Round Cake, <br />Serves 10 -12  </td>
-                            <td>CK198234</td>
-                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
-                            <td>9343927070</td>
-                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
-                            <td>$18.00</td>
-                            <td class="pending">Pending</td>
-                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
-                          </tr>
-                          <tr>
-                            <td> <img src="images/cake-order.png" /></td>
-                            <td>10” Round Cake, <br />Serves 10 -12  </td>
-                            <td>CK198234</td>
-                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
-                            <td>9343927070</td>
-                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
-                            <td>$18.00</td>
-                            <td class="pending">Pending</td>
-                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
-                          </tr>
-                          <tr>
-                            <td> <img src="images/cake-order.png" /></td>
-                            <td>10” Round Cake, <br />Serves 10 -12  </td>
-                            <td>CK198234</td>
-                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
-                            <td>9343927070</td>
-                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
-                            <td>$18.00</td>
-                            <td class="pending">Pending</td>
-                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
-                          </tr>
-                          <tr>
-                            <td> <img src="images/cake-order.png" /></td>
-                            <td>10” Round Cake, <br />Serves 10 -12  </td>
-                            <td>CK198234</td>
-                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
-                            <td>9343927070</td>
-                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
-                            <td>$18.00</td>
-                            <td class="delivered">Pending</td>
-                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
-                          </tr>
-                          <tr>
-                            <td> <img src="images/cake-order.png" /></td>
-                            <td>10” Round Cake, <br />Serves 10 -12  </td>
-                            <td>CK198234</td>
-                            <td>Andrey Maz <br />andrymaz@gmail.com</td>
-                            <td>9343927070</td>
-                            <td>6/15/2015 <br/> 12:42:39 PM   </td>
-                            <td>$18.00</td>
-                            <td class="processed">Pending</td>
-                            <td><a href="javascript:void(0)" class="btn btn-xs btn-success" ng-click="toggleOrderDetails()">View Order</a></td>
-                          </tr>
-                          <tr class="last-row">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="order-total">Order Total:</td>
-                                <td class="dollar-price">$135.00</td>
-                                <td></td>
-                                <td></td>
-                          </tr>
-                        </tbody>
-                      </table>-->
+
                       
                     </div>
                 </div>
@@ -159,15 +65,21 @@
                             </button>
                         </div>
                     </div>
-                    
+                   
                     <div class="row">
-                      <h1>Cake Details</h1>
+                      <h1>Your Order Details</h1>
                     </div>
-                    
+                     <div class="preview-ck">
+                     <div class="orderID">Order ID: ck10342</div>
                     <div ng-repeat="details in cakeDetails" >
+                    <div class="image-prev">
+                      <img ng-src="{{'/cakeapp/images/'+details.image}}" />
+                    </div>
+                    <div class="prev-textr">
                       <h2 class="cake-title">{{details.Property}} : {{details.name}}</h2>
                       <span ng-show="details.serving">Serves : {{details.serving}}</span>
-                      <img ng-src="{{'/cakeAppNew/cakeapp/images/'+details.image}}" />
+                    </div>
+                      
                     </div>
                     
                     <div class="row" style="position:relative">
@@ -179,11 +91,11 @@
                         <li><a href="" class="-text" ng-click="changeStatus('delivered')">Delivered</a>
                         </li>
                       </ul>
-                      <a class="btn dropdown-button waves-effect waves-light " href="#" data-activates="dropdown1">{{selectedOrder.status}}<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                      <a class="btn dropdown-button waves-effect waves-light cta" href="#" data-activates="dropdown1">{{selectedOrder.status}}<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    </div>
                     </div>
                 
-                <p><a class="waves-effect waves-light btn modal-trigger  light-blue" href="#modal1" ng-click="openModal()">Modal</a>
-                </p>
+
                 
                 
                 <div id="modal1" class="modal">

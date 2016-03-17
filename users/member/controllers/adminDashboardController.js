@@ -43,13 +43,13 @@ define(['app'], function (app) {
 			
 		}
 		
-		$http.get('/cakeAppNew/cakeapp/mockup/orderDetails.json').success(function (response) { 
+		$http.get('/cakeapp/mockup/orderDetails.json').success(function (response) { 
 			if(response){
         		$scope.cakeDetails = response.details;
 			}
         }); 
         
-        $http.get('/cakeAppNew/cakeapp/mockup/cakeOrders.json').success(function (response) { 
+        $http.get('/cakeapp/mockup/cakeOrders.json').success(function (response) { 
 			if(response){
         		$scope.cakeOrders = response.orders;
 			}

@@ -1,8 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-tr th{ background:#5B7890; border-right:1px solid #82A1B1; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; font-weight:300; color:#fff;}
+table {
+    width: 100%;
+    display: table;
+    background: #fff;
+}
+tr th{ background:#5B7890; border-right:1px solid #82A1B1; 
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; 
+    font-weight:300; color:#fff; border-radius: 0;border-top: 1px solid #ddd;
+}
 
 .clearfix {
   overflow: auto;
@@ -17,7 +24,9 @@ tr th{ background:#5B7890; border-right:1px solid #82A1B1; font-family:Gotham, "
     width: 200px;
     float: left;
 }
-.order-table td{ font-size:11px; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; color:#3498DB;border-right: 1px solid #DDD
+.order-table td{ font-size:11px; 
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", 
+    Helvetica, Arial, sans-serif; color:#3498DB;border-right: 1px solid #DDD;border-bottom: 1px solid #ccc;
 }
 
 .order-table tr:hover td{
@@ -54,7 +63,7 @@ td.dollar-price {
 }
 .filter {
     float: right;
-    width: 20%;
+    width: 22%;
     margin: 10px;
 }
 
@@ -74,6 +83,7 @@ td.dollar-price {
     display: inline-block;
     width: 150px;
     float: right;
+    height:35px;
 }
 
 /* Cake wizard */
@@ -110,7 +120,7 @@ width: 1070px; padding:15px; margin:10px;
     border-style: solid;
     border-width: 1px 0;
     padding: 10px;
-        background: #f0f0f0 url("/cakeAppNew/cakeapp/images/bg-box-typ9.gif") repeat-x scroll left top;
+        background: #f0f0f0 url("/cakeapp/images/bg-box-typ9.gif") repeat-x scroll left top;
     /*width: 67.5%;*/
 }
 .progress{
@@ -135,7 +145,7 @@ a {
     background-position: 0 0;
 }
 .wiz-img .img {
-    background: rgba(0, 0, 0, 0) url("/cakeAppNew/cakeapp/images/cakesteps1.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("/cakeapp/images/cakesteps1.png") no-repeat scroll 0 0;
     height: 66px;
 
 }
@@ -224,7 +234,7 @@ h2.hd-typ2.f-gray1 {
     font-size: 18px;
 }
 .box-typ13 {
-    background: rgba(0, 0, 0, 0) url("/cakeAppNew/cakeapp/images/bg-box-typ13.gif") repeat-x scroll left top;
+    background: rgba(0, 0, 0, 0) url("/cakeapp/images/bg-box-typ13.gif") repeat-x scroll left top;
 }
 
 .btn-bar {
@@ -234,7 +244,7 @@ h2.hd-typ2.f-gray1 {
     text-align: right;
 }
 .btn2 {
-    background: rgba(0, 0, 0, 0) url("/cakeAppNew/cakeapp/images/nextbtn.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("πø/cakeapp/images/nextbtn.png") no-repeat scroll 0 0;
     border: none;
     width: 112px;
     height: 35px;
@@ -498,3 +508,119 @@ select#ddlCollectBakery {
     height: 33px;
     width: 166px !important;
 }
+nav {
+    background-color: #0065A1;
+    color: #fff;
+    height: 56px;
+    line-height: 56px;
+    width: 100%;
+}
+footer.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #106da5;
+}
+td span.pending, td span.completed, td span.delivered {
+    background: #fff;
+}
+td span.pending{ color: #000;}
+td span.completed{ color: #E78117;}
+td span.delivered{ color: #218C24;}
+
+.btn, .btn-large, .btn-flat {
+   background: #00c853 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 9px;
+    height: 30px;
+    line-height: 11px;
+    outline: 0 none;
+    padding: 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.btn:hover, .btn-large:hover {
+    background-color: #00C853; 
+}
+.container.custom-cake-detail {
+background: #ffffff none repeat scroll 0 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 -1px 17px 0 rgba(0, 0, 0, 0.2) inset;
+    margin: 10px;
+    padding: 15px;
+}
+.container.custom-cake-detail h1{
+    font-size: 22px;
+    margin: 0;
+    padding: 10px 25px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}
+
+.container.custom-cake-detail h2{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+
+}
+.preview-ck {
+    width: 500px;
+    border: 1px solid #ccc;
+    margin: auto;
+  
+    margin: 25px auto 25px;
+    background: #FFF;
+}
+
+.prev-textr {
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    height: 150px;
+    padding: 10px;
+    width: 348px;
+}
+
+
+.image-prev {
+border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    height: 150px;
+    width: 150px;
+}
+.image-prev > img {
+    width: 95%;
+}
+.cta {
+    float: right;
+    margin: 10px 27px;
+}
+.orderID {
+    background: #EFEFEF none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+.dropdown-show {
+    opacity: 1;
+    display: block;
+    top: 37px;
+    width: 102px;
+    right: 27px;
+}
+.row {
+    clear: both;
+}
+   
+
+  header .brand-logo {
+    margin: 1px 0;
+   padding: 0;
+    margin-left: 30px;
+}
+
+h1.logo-wrapper img {
+    width: 90%;
+}
+ 
