@@ -138,30 +138,12 @@
                                             <h2 class="hd-typ2">Customize your Cake</h2>
 
                                             <div class="cs-001">
-                                                <a id="csh_9" class="wiz-img img-square select-shape" href="javascript:;">
+                                                <a id="" ng-repeat="shape in cakeSpec.shapes" class="{{'wiz-img ' + shape.image }}" href="javascript:;">
                                                     <span class="img">&nbsp;</span>
-                                                    <span class="name">Square</span>
+                                                    <span class="name">{{shape.name}}</span>
                                                 </a>
-                                                <a id="csh_9" class="wiz-img img-round" href="javascript:;">
-                                                    <span class="img">&nbsp;</span>
-                                                    <span class="name">Round</span>
-                                                </a>
-
-                                                <a id="csh_9" class="wiz-img img-heart" href="javascript:;">
-                                                    <span class="img">&nbsp;</span>
-                                                    <span class="name">Heart</span>
-                                                </a>
-
-                                                <a id="csh_9" class="wiz-img img-letter" href="javascript:;">
-                                                    <span class="img">&nbsp;</span>
-                                                    <span class="name">Numbers A-Z</span>
-                                                </a> 
-
-                                                <a id="csh_9" class="wiz-img img-num" href="javascript:;">
-                                                    <span class="img">&nbsp;</span>
-                                                    <span class="name">Numbers 0-9</span>
-                                                </a>                                           
                                             </div>
+                                            
                                         </div>
                                         <div class="disable-cakeType">
                                             <div class="box-typ9 pd15 clearfix">

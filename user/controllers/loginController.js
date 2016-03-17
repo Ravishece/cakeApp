@@ -30,11 +30,12 @@ define(['app', 'underscore', 'messages'], function (app, _, messages) {
                 securePin: $scope.securePin
         	}
             	
-            if(data.email === 'associate'){
-                $location.path('associate');
+            if(data.email === 'admin'){
+                 $location.path('admin');
                 return;    
-            }else if(data.email === 'admin'){
-                $location.path('admin');
+            }else{
+                /*else if(data.email === 'admin'){*/
+                $location.path('associate');
                 return;
             }
             

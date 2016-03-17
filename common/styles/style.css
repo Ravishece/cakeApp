@@ -158,3 +158,9 @@ order-table td{
 	top: 37px;
 	width: 182px;
 }
+
+.profile-image-login{
+	height: auto;
+	width: auto;
+	border-radius: 0;
+}
