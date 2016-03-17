@@ -18,7 +18,7 @@ app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
   
   //CakeApp routing
-  .when("/associate", angularAMD.route({
+  .when("/member", angularAMD.route({
       templateUrl: 'users/associate/views/associateDashboard.html', controller: 'associateDashboardController', controllerUrl: 'users/associate/controllers/associateDashboardController'
   }))
   

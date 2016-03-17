@@ -35,7 +35,7 @@ define(['app', 'underscore', 'messages'], function (app, _, messages) {
                 return;    
             }else{
                 /*else if(data.email === 'admin'){*/
-                $location.path('associate');
+                $location.path('member');
                 return;
             }
             
